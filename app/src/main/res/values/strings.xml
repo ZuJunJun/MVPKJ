@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MVPKJ</string>
+    <string name="welcome_login_tip">欢迎登录</string>
+    <string name="input_login_name">请输入用户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="kds">跳转云KDS</string>
+    <string name="validity">跳转效期</string>
+</resources>
