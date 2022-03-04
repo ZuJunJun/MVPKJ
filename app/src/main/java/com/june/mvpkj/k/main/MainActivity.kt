@@ -6,14 +6,13 @@ import com.june.mvpkj.k.base.BaseActivity
 
 class MainActivity : BaseActivity<MainContract.View,MainPresenter>(),MainContract.View {
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun createPresenter(): MainPresenter {
         return MainPresenter(this)
     }
 
     override fun layout(): View {
-        binding = ActivityMainBinding.inflate(layoutInflater)
         return binding.root
     }
 

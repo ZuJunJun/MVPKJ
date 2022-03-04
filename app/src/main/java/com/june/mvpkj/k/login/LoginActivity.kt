@@ -11,14 +11,13 @@ import com.june.mvpkj.k.main.MainActivity
 class LoginActivity : BaseActivity<LoginContract.View,LoginPresenter>(),LoginContract.View,
     View.OnClickListener {
 
-    private lateinit var binding: ActivityLoginBinding
+    private val binding: ActivityLoginBinding by lazy { ActivityLoginBinding.inflate(layoutInflater) }
 
     override fun createPresenter(): LoginPresenter {
         return LoginPresenter(this)
     }
 
     override fun layout(): View {
-        binding = ActivityLoginBinding.inflate(layoutInflater)
         return binding.root
     }
 
